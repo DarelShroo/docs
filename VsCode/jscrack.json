@@ -1,0 +1,124 @@
+{
+  "impresoras_3d": [
+    {
+      "nombre": "MakerBot Replicator+",
+      "marca": "MakerBot",
+      "tecnología": "FDM",
+      "tamaño_maximo": "29.5 x 19.5 x 16.5 cm",
+      "resolucion": "100 micrones",
+      "velocidad_maxima": "150 mm/s",
+      "materiales_compatibles": ["PLA", "ABS", "PETG"],
+      "precio": "$2,499",
+      "url": "https://www.makerbot.com/3d-printers/replicator/",
+      "imagen": "https://example.com/impresora1.jpg"
+    },
+    {
+      "nombre": "Ultimaker S5",
+      "marca": "Ultimaker",
+      "tecnología": "FFF",
+      "tamaño_maximo": "33.5 x 24.0 x 30.5 cm",
+      "resolucion": "20 micrones",
+      "velocidad_maxima": "300 mm/s",
+      "materiales_compatibles": ["PLA", "ABS", "CPE", "TPU"],
+      "precio": "$5,995",
+      "url": "https://ultimaker.com/3d-printers/ultimaker-s5",
+      "imagen": "https://example.com/impresora2.jpg"
+    },
+    {
+      "nombre": "Prusa i3 MK3S+",
+      "marca": "Prusa Research",
+      "tecnología": "FDM",
+      "tamaño_maximo": "25.0 x 21.0 x 20.0 cm",
+      "resolucion": "50 micrones",
+      "velocidad_maxima": "200 mm/s",
+      "materiales_compatibles": ["PLA", "ABS", "PETG", "ASA"],
+      "precio": "$999",
+      "url": "https://www.prusa3d.com/original-prusa-i3-mk3/",
+      "imagen": "https://example.com/impresora3.jpg"
+    },
+    {
+      "nombre": "Formlabs Form 3",
+      "marca": "Formlabs",
+      "tecnología": "SLA",
+      "tamaño_maximo": "14.5 x 14.5 x 18.5 cm",
+      "resolucion": "25 micrones",
+      "velocidad_maxima": "50 mm/s",
+      "materiales_compatibles": ["Resinas"],
+      "precio": "$3,499",
+      "url": "https://formlabs.com/3d-printers/form-3/",
+      "imagen": "https://example.com/impresora4.jpg"
+    },
+    {
+      "nombre": "FlashForge Creator Pro",
+      "marca": "FlashForge",
+      "tecnología": "FDM",
+      "tamaño_maximo": "22.5 x 14.5 x 15.5 cm",
+      "resolucion": "100 micrones",
+      "velocidad_maxima": "200 mm/s",
+      "materiales_compatibles": ["PLA", "ABS", "PETG"],
+      "precio": "$899",
+      "url": "https://flashforge.com/products/creator-pro",
+      "imagen": "https://example.com/impresora5.jpg"
+    },
+    {
+      "nombre": "LulzBot Mini 2",
+      "marca": "LulzBot",
+      "tecnología": "FDM",
+      "tamaño_maximo": "16.0 x 16.0 x 18.0 cm",
+      "resolucion": "50 micrones",
+      "velocidad_maxima": "275 mm/s",
+      "materiales_compatibles": ["PLA", "ABS", "PETG", "Nylon"],
+      "precio": "$1,500",
+      "url": "https://www.lulzbot.com/store/printers/lulzbot-mini-2",
+      "imagen": "https://example.com/impresora6.jpg"
+    },
+    {
+      "nombre": "Anycubic Photon Mono",
+      "marca": "Anycubic",
+      "tecnología": "LCD",
+      "tamaño_maximo": "13.0 x 8.0 x 16.0 cm",
+      "resolucion": "50 micrones",
+      "velocidad_maxima": "50 mm/s",
+      "materiales_compatibles": ["Resinas"],
+      "precio": "$269",
+      "url": "https://www.anycubic.com/collections/3d-printers/products/anycubic-photon-mono",
+      "imagen": "https://example.com/impresora7.jpg"
+    },
+    {
+      "nombre": "Creality Ender 3 V2",
+      "marca": "Creality",
+      "tecnología": "FDM",
+      "tamaño_maximo": "22.0 x 22.0 x 25.0 cm",
+      "resolucion": "100 micrones",
+      "velocidad_maxima": "180 mm/s",
+      "materiales_compatibles": ["PLA", "TPU", "ABS"],
+      "precio": "$269",
+      "url": "https://www.creality.com/ender-3-v2-3d-printer-p00260p1.html",
+      "imagen": "https://example.com/impresora8.jpg"
+    },
+    {
+      "nombre": "Dremel Digilab 3D40 Flex",
+      "marca": "Dremel",
+      "tecnología": "FDM",
+      "tamaño_maximo": "25.5 x 15.5 x 17.0 cm",
+      "resolucion": "50 micrones",
+      "velocidad_maxima": "150 mm/s",
+      "materiales_compatibles": ["PLA", "TPU"],
+      "precio": "$1,299",
+      "url": "https://digilab.dremel.com/3d-printers/3d40-flex-3d-printer/",
+      "imagen": "https://example.com/impresora9.jpg"
+    },
+    {
+      "nombre": "Sindoh 3DWOX 1",
+      "marca": "Sindoh",
+      "tecnología": "FFF",
+      "tamaño_maximo": "21.0 x 20.0 x 18.0 cm",
+      "resolucion": "20 micrones",
+      "velocidad_maxima": "200 mm/s",
+      "materiales_compatibles": ["PLA", "ABS", "TPU", "PETG"],
+      "precio": "$1,299",
+      "url": "https://www.sindoh.com/3dwox-1",
+      "imagen": "https://example.com/impresora10.jpg"
+    }
+  ]
+}
