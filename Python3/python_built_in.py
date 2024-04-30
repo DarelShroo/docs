@@ -1,4 +1,6 @@
-import sys
+import sys, time
+import tools
+import tools.time
 
 def separateBlock(n_guiones: int = 0, name: str = '') -> None:
     guiones = '-' * n_guiones
@@ -103,9 +105,10 @@ separateBlock(len('int()'))
 #open()
 separateBlock(0, 'open()')
 file =  open('file.txt', 'r', encoding='UTF-8')
-with file as f:
-    contenido = f.read()
-    print(contenido)
+if(file):
+    with file as f:
+        contenido = f.read()
+        print(contenido)
 separateBlock(len('open()'))
 
 # Funciones relacionadas con ejecución y manipulación de código
@@ -149,5 +152,70 @@ def endInLetterA(name: str) -> bool:
     print(name)
     return name.endswith('a')
 resultado = filter(lambda x: endInLetterA(x), lista_personas)
-#filter es un iteratible perezoso por tanto no imprimirá nada por pantalla hasta que este se convierta en una lista.
+#filter es un lazy iterable
 list(resultado)
+separateBlock(len('filter()'))
+
+
+#super()
+separateBlock(0, 'super()')
+class Animal:
+    def __init__(self, species):
+        self.species = species
+
+class Dog(Animal):
+    def __init__(self, breed, age):
+        super().__init__("Canine")
+        self.breed = breed
+        self.age = age
+
+dog = Dog("Labrador", 3)
+print(dog.species)
+separateBlock(len('super()'))
+
+#iter()
+separateBlock(0, 'iter()')
+class numberGenerator:
+    def __init__(self) -> None:
+        self.start = 0
+    def __iter__(self) -> object:
+        return self
+    def __next__(self) -> int:
+        self.start+=1
+        return self.start
+    __call__ = __next__
+iterator = iter(numberGenerator(), 5)
+print(list(iterator))
+separateBlock(len('iter()'))
+
+#format()
+separateBlock(0, 'format()')
+s = 'abc'
+print(format(s, '*^'+str(20-len(s))))
+print("Hello", "{}".format("World"), sep=" ")
+separateBlock(len('format()'))
+
+#property()
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        print("Name: ", end="")
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        print('Setting name to:', value)
+        self._name = value
+
+    @name.deleter
+    def name(self):
+        print('Deleting name...')
+        del self._name
+
+p = Person('David')
+print(p.name)
+p.name = 'Rocky'
+del p.name

@@ -680,6 +680,7 @@ La función `int()` se utiliza para convertir un valor en un entero.
 
 #### Sintaxis:
 ```python
+x = "10"
 int(x, base=10)
 ```
 
