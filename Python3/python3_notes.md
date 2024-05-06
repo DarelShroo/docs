@@ -151,3 +151,73 @@ Ambos imprimirán "S"
 ```[start:end:step]``` Permite extraer elementos de una secuencia, como una lista o una cadena en Python. Indica que se extraerán elementos desde el índice start hasta el índice end - 1, dando saltos de tamaño step.
 
 [Algúnos métodos de strings](./python3_string_methods.md)
+
+# Condicionales
+
+Ejemplos de uso:
+
+```python
+cold = True
+value = None
+
+if not cold:
+    print('Hace frio')
+else: 
+     print('No hace frio')
+
+if vacio is None:
+    print('Is None')
+else: 
+     print('Is not None')
+
+# También podemos hacer uso de elseif en python no existe los switch-case existen los match-case 
+
+point(2, 5)
+match point:
+    case (x, y):
+        print(f'({x},{y}) is in plane')
+    case (x, y, z):
+        print(f'({x},{y},{z}) is in space')
+
+match point:
+    case (int(), int()):
+        print(f'{point} is in plane')
+    case (int(), int(), int()):
+        print(f'{point} is in space')
+    case _:
+        print('Unknown!')    
+
+match point:
+    case (int(x), int(y)):
+        print(f'({x},{y}) is in plane')
+    case (int(x), int(y), int(z)):
+        print(f'({x},{y},{z}) is in space')
+    case _:
+        print('Unknown!')  
+
+match age:
+    case 0 | None:
+        print('Waaath!')
+```
+
+Se puede hacer uso de operadores lógicos:
+```python
+x > 10 or x < 0 and y < 10 
+not(x == 0)
+```
+
+# Operador Morsa
+``` python
+# Sin el operador morsa
+numero = 5
+cuadrado = numero ** 2
+
+# Con el operador morsa
+cuadrado := 5 ** 2 # asigna valores a variables como parte de una expresión y, al mismo tiempo, evalua esa expresión
+```
+
+``` python
+while 0 <= (mark := float(input( Introduzca una nueva nota: ))) <= 10:
+    print(mark) 
+
+print('Nota fuera de rango')
