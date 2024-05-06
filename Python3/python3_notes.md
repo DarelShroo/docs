@@ -1,3 +1,7 @@
+# Agradecimiento 🙏📚
+
+Gran parte de la información proporcionada en este documento ha sido extraída del libro en PDF creado por Sergio Delgado Quintero, ex profesor en la Escuela de Organización Industrial (EOI) en el curso de Python en el año 2019. Puedes encontrar más recursos y detalles en [aprendepython.es](https://aprendepython.es/). 🚀
+
 # Gestión de Paquetes con PIP
 
 ## Instalación de PIP
@@ -109,4 +113,41 @@ tres = three = drei = 3
 [Funciones integradas en Python](./python_built_in.md)
 
 # Mutabilidad
+Las variables son nombres, no lugares. Cuando asignamos un valor a una variable el nombre de la variable apunta a una zona en memoria donde está guardado ese valor.
+```
+a = 5_5_5 #Python ignora _ (555)
+b = a
+```
 
+Si utilizamos id(a) id(b) verás que ambas variables apuntan al mismo sitio en memoria.
+
+Cuando volvemos a asignar valor cambia la zona de memoria donde apuntamos. Cuando esta zona de memoria no de puede modificar es cuando hablamos de inmutabilidad.
+
+# Asignación aumentada
+```
+number = 0
+number //= 5
+number += 
+number *= 3
+number//=4
+number**=1
+```
+
+# Módulo
+En Python, el operador "%" se utiliza para obtener el resto de una división entre números.
+Consejo: Si se calcula el módulo de cualquier número con respecto al tamaño de una lista, el resultado estará siempre entre 0 y el tamaño total de la lista.
+
+# Strings
+En Python los strings pueden ser recorrido representando cada valor una posición que puede ser accedida con un índice positivo y también negativo.
+
+```
+my_string = "My String"
+print(my_string[3])
+print(my_string[-6]) # En negativo comienza en -1 ya que 0 es positivo.
+```
+
+Ambos imprimirán "S"
+
+```[start:end:step]``` Permite extraer elementos de una secuencia, como una lista o una cadena en Python. Indica que se extraerán elementos desde el índice start hasta el índice end - 1, dando saltos de tamaño step.
+
+[Algúnos métodos de strings](./python3_string_methods.md)

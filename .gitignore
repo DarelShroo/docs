@@ -91,3 +91,6 @@ Pipfile.lock
 
 # poetry
 poetry.lock
+
+#Config JetBrains
+.idea/
