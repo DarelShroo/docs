@@ -221,3 +221,8 @@ while 0 <= (mark := float(input( Introduzca una nueva nota: ))) <= 10:
     print(mark) 
 
 print('Nota fuera de rango')
+
+```
+# Listas 
+
+[Ejemplos de listas y algúnos métodos.](./python3_list_methods.md)
