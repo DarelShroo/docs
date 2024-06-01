@@ -91,6 +91,9 @@ Pipfile.lock
 
 # poetry
 poetry.lock
+<<<<<<< Updated upstream
 
 #Config JetBrains
 .idea/
+=======
+>>>>>>> Stashed changes
